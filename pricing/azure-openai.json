@@ -3037,5 +3037,32 @@
         }
       }
     }
+  },
+  "gpt-5.4": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00025
+        },
+        "response_token": {
+          "price": 0.0015
+        },
+        "cache_read_input_token": {
+          "price": 0.000025
+        }
+      }
+    }
+  },
+  "gpt-5.4-pro": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.003
+        },
+        "response_token": {
+          "price": 0.018
+        }
+      }
+    }
   }
 }

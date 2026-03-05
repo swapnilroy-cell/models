@@ -3472,5 +3472,23 @@
   "gpt-5.3-codex": {
     "disablePlayground": true,
     "type": { "primary": "text" }
+  },
+  "gpt-5.4": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
+  },
+  "gpt-5.4-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools",
+        "image"
+      ]
+    }
   }
 }
