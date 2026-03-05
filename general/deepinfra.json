@@ -398,7 +398,8 @@
   "Qwen/Qwen3-Embedding-4B": {
     "type": {
       "primary": "embedding"
-    }
+    },
+    "disablePlayground": true
   },
   "meta-llama/Llama-Guard-4-12B": {
     "type": {
