@@ -3473,22 +3473,22 @@
     "disablePlayground": true,
     "type": { "primary": "text" }
   },
+  "gpt-5.3-chat": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
   "gpt-5.4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "gpt-5.4-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   }
 }

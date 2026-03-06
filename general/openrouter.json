@@ -4861,10 +4861,7 @@
   "openai/gpt-5.3-chat": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4876,10 +4873,7 @@
   "google/gemini-3.1-flash-lite-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4891,17 +4885,13 @@
   "upstage/solar-pro-3": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     }
   },
   "inception/mercury-2": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "params": [
       {
@@ -4913,10 +4903,7 @@
   "openai/gpt-5.4-pro": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {
@@ -4928,10 +4915,7 @@
   "openai/gpt-5.4": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "image",
-        "tools"
-      ]
+      "supported": ["image", "tools"]
     },
     "params": [
       {

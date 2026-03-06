@@ -1683,19 +1683,13 @@
   "gemini-pro-latest": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "gemini-3.1-flash-lite-preview": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools",
-        "image"
-      ]
+      "supported": ["tools", "image"]
     }
   },
   "gemini-3.1-flash-image-preview": {
@@ -1737,9 +1731,7 @@
   "deep-research-pro-preview-12-2025": {
     "type": {
       "primary": "chat",
-      "supported": [
-        "tools"
-      ]
+      "supported": ["tools"]
     },
     "disablePlayground": true
   }
