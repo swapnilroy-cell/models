@@ -956,6 +956,7 @@
   },
   "text-embedding-ada-002": { "type": { "primary": "embedding" }, "disablePlayground": true },
   "text-moderation-stable": { "type": { "primary": "moderation" }, "disablePlayground": true },
+  "gpt-4o-transcribe-diarize": { "type": { "primary": "audio" }, "disablePlayground": true },
   "text-moderation-latest": { "type": { "primary": "moderation" }, "disablePlayground": true },
   "text-moderation-001": { "type": { "primary": "moderation" }, "disablePlayground": true },
   "o4-mini": {
@@ -2546,6 +2547,14 @@
     },
     "disablePlayground": true
   },
+  "gpt-image-1.5-2025-12-16": {
+    "disablePlayground": true,
+    "type": { "primary": "text" }
+  },
+  "gpt-image-1.5": {
+    "disablePlayground": true,
+    "type": { "primary": "text" }
+  },
   "gpt-5.2-codex": {
     "disablePlayground": true,
     "type": { "primary": "text" }
@@ -2554,7 +2563,48 @@
     "disablePlayground": true,
     "type": { "primary": "text" }
   },
+  "gpt-realtime-1.5": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "gpt-audio-1.5": {
+    "disablePlayground": true,
+    "type": {
+      "primary": "audio"
+    }
+  },
+  "gpt-3.5-0301": {
+    "type": {
+      "primary": "chat"
+    }
+  },
   "gpt-5.3-chat-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gpt-5.4": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gpt-5.4-2026-03-05": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gpt-5.4-pro": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
+  },
+  "gpt-5.4-pro-2026-03-05": {
     "type": {
       "primary": "chat",
       "supported": ["tools", "image"]
