@@ -3471,5 +3471,11 @@
   "gpt-5.3-codex": {
     "disablePlayground": true,
     "type": { "primary": "text" }
+  },
+  "gpt-5.3-chat": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
   }
 }

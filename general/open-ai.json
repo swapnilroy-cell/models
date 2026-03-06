@@ -2553,5 +2553,11 @@
   "gpt-5.3-codex": {
     "disablePlayground": true,
     "type": { "primary": "text" }
+  },
+  "gpt-5.3-chat-latest": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
   }
 }
