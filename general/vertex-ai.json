@@ -1822,6 +1822,7 @@
     }
   },
   "gemini-2.5-computer-use-preview-10-2025": {
+    "disablePlayground": true,
     "type": {
       "primary": "chat",
       "supported": [
