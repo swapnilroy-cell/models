@@ -4959,6 +4959,7 @@
     "type": {
       "primary": "chat",
       "supported": [
+        "image",
         "tools"
       ]
     },
