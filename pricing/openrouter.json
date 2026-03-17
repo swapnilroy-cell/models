@@ -160,10 +160,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000025
+          "price": 0.000026
         },
         "response_token": {
-          "price": 0.00004
+          "price": 0.000038
         }
       }
     }
@@ -640,10 +640,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000013
         },
         "response_token": {
-          "price": 0
+          "price": 0.000156
         }
       }
     }
@@ -772,10 +772,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0
+          "price": 0.000026
         },
         "response_token": {
-          "price": 0
+          "price": 0.00026
         }
       }
     }
@@ -796,10 +796,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00012
+          "price": 0.000078
         },
         "response_token": {
-          "price": 0.0006
+          "price": 0.00039
         }
       }
     }
@@ -916,10 +916,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000015
+          "price": 0.00000975
         },
         "response_token": {
-          "price": 0.00012
+          "price": 0.000078
         }
       }
     }
@@ -2764,10 +2764,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00008
+          "price": 0.000052
         },
         "response_token": {
-          "price": 0.00032
+          "price": 0.000208
         }
       }
     }
@@ -2800,10 +2800,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00004
+          "price": 0.000026
         },
         "response_token": {
-          "price": 0.00012
+          "price": 0.000078
         }
       }
     }
@@ -3124,10 +3124,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00002
+          "price": 0.000066
         },
         "response_token": {
-          "price": 0.00002
+          "price": 0.0001
         }
       }
     }
@@ -3412,10 +3412,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.000065
+          "price": 0.000085
         },
         "response_token": {
-          "price": 0.000075
+          "price": 0.000085
         }
       }
     }
@@ -4612,7 +4612,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.0000295
+          "price": 0.000025
         },
         "response_token": {
           "price": 0.00012
@@ -4624,10 +4624,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00008
+          "price": 0.000072
         },
         "response_token": {
-          "price": 0.000256
+          "price": 0.00023
         }
       }
     }
@@ -4780,10 +4780,10 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 0.00001
+          "price": 0.0000065
         },
         "response_token": {
-          "price": 0.00004
+          "price": 0.000026
         }
       }
     }
@@ -5180,6 +5180,114 @@
         },
         "response_token": {
           "price": 0.0015
+        }
+      }
+    }
+  },
+  "z-ai/glm-5-turbo": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000096
+        },
+        "response_token": {
+          "price": 0.00032
+        }
+      }
+    }
+  },
+  "x-ai/grok-4.20-multi-agent-beta": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "x-ai/grok-4.20-beta": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0002
+        },
+        "response_token": {
+          "price": 0.0006
+        }
+      }
+    }
+  },
+  "openrouter/hunter-alpha": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "openrouter/healer-alpha": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "nvidia/nemotron-3-super-120b-a12b:free": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
+        }
+      }
+    }
+  },
+  "bytedance-seed/seed-2.0-lite": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000025
+        },
+        "response_token": {
+          "price": 0.0002
+        }
+      }
+    }
+  },
+  "qwen/qwen3.5-9b": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000005
+        },
+        "response_token": {
+          "price": 0.000015
+        }
+      }
+    }
+  },
+  "minimax/minimax-m2.5:free": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0
+        },
+        "response_token": {
+          "price": 0
         }
       }
     }
