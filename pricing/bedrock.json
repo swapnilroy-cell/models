@@ -1825,6 +1825,30 @@
       }
     }
   },
+  "moonshot.kimi-k2-thinking": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0006
+        },
+        "response_token": {
+          "price": 0.0025
+        }
+      }
+    }
+  },
+  "moonshotai.kimi-k2.5": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.0006
+        },
+        "response_token": {
+          "price": 0.003
+        }
+      }
+    }
+  },
   "qwen.qwen3-coder-30b-a3b-v1:0": {
     "pricing_config": {
       "pay_as_you_go": {
@@ -2086,32 +2110,6 @@
     }
   },
   "anthropic.claude-sonnet-4-6": {
-    "pricing_config": {
-      "pay_as_you_go": {
-        "request_token": {
-          "price": 0.0003
-        },
-        "response_token": {
-          "price": 0.0015
-        },
-        "cache_write_input_token": {
-          "price": 0.000375
-        },
-        "cache_read_input_token": {
-          "price": 0.00003
-        }
-      },
-      "batch_config": {
-        "request_token": {
-          "price": 0.00015
-        },
-        "response_token": {
-          "price": 0.00075
-        }
-      }
-    }
-  },
-  "claude-sonnet-4-6": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
