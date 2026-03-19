@@ -1069,5 +1069,117 @@
     "type": {
       "primary": "chat"
     }
+  },
+  "ClarityAI/crystal": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "zai-org/GLM-4.7": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "ClarityAI/creative": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "black-forest-labs/FLUX-2-max": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "zai-org/GLM-5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "Qwen/Qwen3-Max": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "zai-org/GLM-4.6V": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "ClarityAI/flux": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "Qwen/Qwen3-Max-Thinking": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "MiniMaxAI/MiniMax-M2.1": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "ByteDance/Seedream-4.5": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "nvidia/llama-nemotron-embed-vl-1b-v2": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "allenai/Olmo-3.1-32B-Instruct": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
+  },
+  "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B": {
+    "type": {
+      "primary": "chat",
+      "supported": [
+        "tools"
+      ]
+    }
   }
 }
