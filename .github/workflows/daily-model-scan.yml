@@ -1,0 +1,101 @@
+name: Daily Model Scan
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: 'Scan a single provider only (e.g. openai, anthropic). Leave blank to scan all.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scan:
+    name: Scan Provider Models & Pricing
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 portkey-ai
+
+      - name: Run model scanner
+        env:
+          PORTKEY_API_KEY: ${{ secrets.PORTKEY_API_KEY }}
+          PORTKEY_VIRTUAL_KEY: ${{ secrets.PORTKEY_VIRTUAL_KEY }}
+        run: |
+          ARGS="--output /tmp/scan-report.md"
+          if [ -n "${{ inputs.provider }}" ]; then
+            ARGS="$ARGS --provider ${{ inputs.provider }}"
+          fi
+          python scripts/scan-models.py $ARGS
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet pricing/ general/ && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Count changes
+        if: steps.changes.outputs.changed == 'true'
+        id: counts
+        run: |
+          NEW_MODELS=$(git diff --unified=0 pricing/ general/ | grep '^+' | grep -v '^+++' | grep -c '"pricing_config"\|"primary"' || true)
+          PRICE_UPDATES=$(git diff --unified=0 pricing/ | grep '^+' | grep -v '^+++' | grep -c '"price"' || true)
+          echo "new_models=$NEW_MODELS" >> "$GITHUB_OUTPUT"
+          echo "price_updates=$PRICE_UPDATES" >> "$GITHUB_OUTPUT"
+
+      - name: Create branch and commit
+        if: steps.changes.outputs.changed == 'true'
+        id: branch
+        run: |
+          BRANCH="model-scan/$(date -u +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add pricing/ general/
+          git commit -m "chore(models): automated scan $(date -u +%Y-%m-%d)"
+          git push origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+
+      - name: Read scan report
+        if: steps.changes.outputs.changed == 'true'
+        id: report
+        run: |
+          {
+            echo 'body<<EOF'
+            cat /tmp/scan-report.md
+            echo EOF
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          NEW=${{ steps.counts.outputs.new_models }}
+          UPDATES=${{ steps.counts.outputs.price_updates }}
+          gh pr create \
+            --title "[Model Scan] ${DATE} — ${NEW} new models, ${UPDATES} price updates" \
+            --body "$(cat /tmp/scan-report.md)" \
+            --base main \
+            --head "${{ steps.branch.outputs.branch }}" \
+            --label "automated,pricing-update"
+
+      - name: No changes found
+        if: steps.changes.outputs.changed == 'false'
+        run: echo "No new models or price changes detected. Nothing to PR."
