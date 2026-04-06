@@ -337,5 +337,20 @@
         }
       }
     }
+  },
+  "glm-4.7-flashx": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000007
+        },
+        "response_token": {
+          "price": 0.00004
+        },
+        "cache_read_input_token": {
+          "price": 0.000001
+        }
+      }
+    }
   }
 }
