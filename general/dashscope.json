@@ -77,6 +77,10 @@
     "params": [{ "key": "max_tokens", "maxValue": 16384 }],
     "type": { "primary": "chat" }
   },
+  "qwen3-vl-235b-a22b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat" }
+  },
   "qwen3-coder-flash": {
     "params": [{ "key": "max_tokens", "maxValue": 65536 }],
     "type": { "primary": "chat" }
@@ -279,10 +283,6 @@
   },
   "qwen-turbo-2025-04-28": {
     "params": [{ "key": "max_tokens", "maxValue": 16384 }],
-    "type": { "primary": "chat" }
-  },
-  "qwen3-vl-235b-a22b": {
-    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
   },
   "qwen3-coder-flash-2025-07-28": {
