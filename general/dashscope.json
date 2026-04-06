@@ -81,6 +81,10 @@
     "params": [{ "key": "max_tokens", "maxValue": 65536 }],
     "type": { "primary": "chat" }
   },
+  "qwen3-vl-235b-a22b": {
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["image"] }
+  },
   "qwen3-vl-30b-a3b": {
     "params": [{ "key": "max_tokens", "maxValue": 32768 }],
     "type": { "primary": "chat" }
