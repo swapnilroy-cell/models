@@ -706,17 +706,26 @@
       }
     }
   },
-  "qwen3-vl-235b-a22b": {
+  "qwen3-vl-235b-a22b-thinking": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
           "price": 0.00004
         },
         "response_token": {
-          "price": 0.00028
+          "price": 0.0004
+        }
+      }
+    }
+  },
+  "qwen3-vl-235b-a22b-instruct": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.00004
         },
-        "reasoning_token": {
-          "price": 0.00084
+        "response_token": {
+          "price": 0.00016
         }
       }
     }
