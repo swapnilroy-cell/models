@@ -1954,5 +1954,27 @@
     "type": {
       "primary": "chat"
     }
+  },
+  "claude-opus-4-1-20250805": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-opus-4-20250514": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-sonnet-4-20250514": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-haiku-4-5": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-opus-4-5": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "claude-sonnet-4-5": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] }
+  },
+  "gemini-2.0-flash-preview-image-generation": {
+    "type": { "primary": "chat", "supported": ["image", "tools"] },
+    "disablePlayground": true
   }
 }

@@ -1734,5 +1734,24 @@
       "supported": ["tools"]
     },
     "disablePlayground": true
+  },
+  "gemini-2.5-flash-preview-tts": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
+  "gemini-2.5-pro-preview-tts": {
+    "type": { "primary": "audio" },
+    "disablePlayground": true
+  },
+  "gemini-embedding-2-preview": {
+    "type": { "primary": "embedding" },
+    "disablePlayground": true
+  },
+  "gemini-robotics-er-1.5-preview": {
+    "type": { "primary": "chat", "supported": ["image", "pdf", "doc", "tools"] }
+  },
+  "gemini-2.5-computer-use-preview-10-2025": {
+    "type": { "primary": "chat", "supported": ["tools", "image"] },
+    "disablePlayground": true
   }
 }
