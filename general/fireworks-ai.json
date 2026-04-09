@@ -663,5 +663,10 @@
     "name": "minimax-m2p7",
     "params": [{ "key": "max_tokens", "maxValue": 8192 }],
     "type": { "primary": "chat", "supported": ["tools"] }
+  },
+  "accounts/fireworks/models/qwen3-coder-480b-a35b-instruct": {
+    "name": "qwen3-coder-480b-a35b-instruct",
+    "params": [{ "key": "max_tokens", "maxValue": 32768 }],
+    "type": { "primary": "chat", "supported": ["tools"] }
   }
 }
