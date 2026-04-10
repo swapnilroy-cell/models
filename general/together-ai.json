@@ -1143,5 +1143,17 @@
       "primary": "video"
     },
     "disablePlayground": true
+  },
+  "MiniMaxAI/MiniMax-M2.5": {
+    "params": [{ "key": "max_tokens", "maxValue": 197000 }],
+    "type": {
+      "primary": "chat"
+    }
+  },
+  "minimax/video-01-director": {
+    "type": {
+      "primary": "video"
+    },
+    "disablePlayground": true
   }
 }
