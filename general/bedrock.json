@@ -4167,5 +4167,11 @@
       "primary": "chat",
       "supported": ["tools", "image"]
     }
+  },
+  "global.anthropic.claude-opus-4-7": {
+    "type": {
+      "primary": "chat",
+      "supported": ["tools", "image"]
+    }
   }
 }
