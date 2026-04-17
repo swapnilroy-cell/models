@@ -1138,6 +1138,12 @@
     },
     "disablePlayground": true
   },
+  "MiniMaxAI/MiniMax-M2.5": {
+    "type": { "primary": "chat", "supported": [] }
+  },
+  "MiniMaxAI/MiniMax-M2.7": {
+    "type": { "primary": "chat", "supported": [] }
+  },
   "minimax/hailuo-02": {
     "type": {
       "primary": "video"
