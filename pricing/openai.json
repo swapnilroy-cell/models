@@ -1395,7 +1395,7 @@
           "response_audio_token": {
             "price": 0.0012
           }
-        }     
+        }
       }
     }
   },
@@ -3163,6 +3163,32 @@
     }
   },
   "gpt-5.2-2025-12-11": {
+    "pricing_config": {
+      "pay_as_you_go": {
+        "request_token": {
+          "price": 0.000175
+        },
+        "response_token": {
+          "price": 0.0014
+        },
+        "cache_write_input_token": {
+          "price": 0
+        },
+        "cache_read_input_token": {
+          "price": 0.0000175
+        },
+        "additional_units": {
+          "web_search": {
+            "price": 1
+          },
+          "file_search": {
+            "price": 0.25
+          }
+        }
+      }
+    }
+  },
+  "gpt-5.2-chat-2025-12-11": {
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
