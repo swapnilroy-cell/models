@@ -271,7 +271,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -691,7 +691,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -715,7 +715,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -790,7 +790,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -850,7 +850,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1066,7 +1066,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1174,7 +1174,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1249,7 +1249,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1408,7 +1408,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1420,7 +1420,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1468,7 +1468,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1492,7 +1492,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 5e-7
+          "price": 0.0000005
         },
         "response_token": {
           "price": 0
@@ -1516,7 +1516,7 @@
     "pricing_config": {
       "pay_as_you_go": {
         "request_token": {
-          "price": 2e-7
+          "price": 0.0000002
         },
         "response_token": {
           "price": 0
